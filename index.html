@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -14,15 +15,26 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Custom styles for this template -->
-    <style type="text/css">
-        body {
-            padding-top: 5rem;
+    <link href="css/index.css" type="text/css" rel="stylesheet">
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
         }
 
-        .starter-template {
-            padding: 3rem 1.5rem;
-            text-align: center;
-        }
+        .bg {
+            /* The image used */
+            background-image: url("images/tech1.jpg");
+
+            /* Full height */
+            height: 75%;
+
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
     </style>
 </head>
 
@@ -52,19 +64,21 @@
             </ul>
         </div>
     </nav>
+    <div class="bg">
+        <div id="LoginForm" style="padding: 7% 5%">
+            <h1>Welcome to CSI-IT</h1>
+            <h4>Login</h4>
+            <input type="email" placeholder="Enter email id"><br>
+            <input type="password" placeholder="Enter password"><br>
+            <input type="submit" value="Login" style="background-color: black;color: white"><br>
+            <a href="SignUp Form" style="color: black">Create an account?</a>
+    </div>
 
-    <main role="main" class="container">
-
-        <div class="starter-template">
-
-        </div>
-
-    </main>
     <footer class="bg-dark fixed-bottom">
         <div id="social-media">
-            <i class="fa fa-facebook-square" style="font-size:36px"></i>
-            <i class="fa fa-twitter-square" style="font-size:36px"></i>
-            <i class="fa fa-google-plus-square" style="font-size:36px"></i>
+            <i class="fa fa-facebook-square" style="font-size:36px;color: white"><a href="#"></a></i>
+            <i class="fa fa-twitter-square" style="font-size:36px;color:white"><a href="#"></a></i>
+            <i class="fa fa-google-plus-square" style="font-size:36px;color: white"><a href="#"></a></i>
         </div>
     </footer>
     <!-- /.container -->
@@ -79,4 +93,5 @@
 
 
 </body>
+
 </html>

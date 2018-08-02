@@ -1,3 +1,8 @@
-footer{
-
+input[type="email"],
+input[type="password"],
+input[type="submit"]{
+    padding: 0.3em;
+    border-radius: 0.5em;
+    width: 20em;
+    margin:0.2em 0em;
 }
