@@ -30,6 +30,7 @@
             /* Full height */
             height: 75%;
 
+
             /* Center and scale the image nicely */
             background-position: center;
             background-repeat: no-repeat;
@@ -115,15 +116,15 @@
             display: block;
         }
 
-        .Tweet-feeds{
+        .Tweet-feeds {
             display: inline-block;
         }
+
     </style>
 </head>
 
 
 <body>
-
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
         <a class="navbar-brand" href="#">CSI-IT</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -147,49 +148,56 @@
             </ul>
         </div>
     </nav>
+
     <div class="bg">
-        <div id="LoginForm" style="padding: 7% 5%">
 
-            <h1>Welcome to CSI-IT</h1>
-            <h4>Login</h4>
-            <form>
-                <input type="email" placeholder="Enter email id"><br>
-                <input type="password" placeholder="Enter password"><br>
-                <input type="submit" value="Login" style="background-color: black;color: white"><br>
-            </form>
-            <a id="create_acc" href="#" style="color: black">Create an account?</a>
-            <div id="myModal" class="modal">
-                <!-- Modal content -->
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <form style="margin: 5% 30%">
-                        <label>Name:</label>
-                        <input type="text" placeholder="Enter your name">
-                        <label>Roll no:</label>
-                        <input type="number" placeholder="Enter your roll no">
-                        <label>Branch:</label>
-                        <input type="text" placeholder="Enter your branch">
-                        <label>Year:</label>
-                        <input type="number" placeholder="Enter your year">
-                        <label>Email id:</label>
-                        <input type="email" placeholder="Enter your email id">
-                        <label>Password:</label>
-                        <input type="password" placeholder="Enter your password">
-                        <label>Confirm Password:</label>
-                        <input type="password" placeholder="Enter your password">
-                        <input type="submit" style="display: block">
-                    </form>
+        <div class="row" style="position: relative; top: 20%; left: 10%">
+            <div id="LoginForm" class="col-sm-6">
+                <h1>Welcome to CSI-IT</h1>
+                <h4>Login</h4>
+                <form>
+                    <input type="email" placeholder="Enter email id"><br>
+                    <input type="password" placeholder="Enter password"><br>
+                    <input type="submit" value="Login" style="background-color: black;color: white"><br>
+                </form>
+                <a id="create_acc" href="#" style="color: black">Create an account?</a>
+                <div id="myModal" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <form style="margin: 5% 30%">
+                            <label>Name:</label>
+                            <input type="text" placeholder="Enter your name">
+                            <label>Roll no:</label>
+                            <input type="number" placeholder="Enter your roll no">
+                            <label>Branch:</label>
+                            <input type="text" placeholder="Enter your branch">
+                            <label>Year:</label>
+                            <input type="number" placeholder="Enter your year">
+                            <label>Email id:</label>
+                            <input type="email" placeholder="Enter your email id">
+                            <label>Password:</label>
+                            <input type="password" placeholder="Enter your password">
+                            <label>Confirm Password:</label>
+                            <input type="password" placeholder="Enter your password">
+                            <input type="submit" style="display: block">
+                        </form>
+                    </div>
+
                 </div>
-
             </div>
         </div>
     </div>
     <div class="Twitter-feed">
-       <div class="Tweet-feeds">
-        <blockquote class="twitter-tweet"><p lang="in" dir="ltr">??? Lulu counters lulu <a href="https://t.co/iCJGexEflE">pic.twitter.com/iCJGexEflE</a></p>&mdash; Vincent (@Biofrostlol) <a href="https://twitter.com/Biofrostlol/status/959222330667843584?ref_src=twsrc%5Etfw">February 2, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <div class="Tweet-feeds">
+            <blockquote class="twitter-tweet">
+                <p lang="in" dir="ltr">??? Lulu counters lulu <a href="https://t.co/iCJGexEflE">pic.twitter.com/iCJGexEflE</a></p>&mdash; Vincent (@Biofrostlol) <a href="https://twitter.com/Biofrostlol/status/959222330667843584?ref_src=twsrc%5Etfw">February 2, 2018</a></blockquote>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
         <div class="Tweet-feeds">
-        <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Mischief soon hits the Rift <a href="https://t.co/c5ZS2f72KS">pic.twitter.com/c5ZS2f72KS</a></p>&mdash; League of Legends (@LeagueOfLegends) <a href="https://twitter.com/LeagueOfLegends/status/931618908980703232?ref_src=twsrc%5Etfw">November 17, 2017</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <blockquote class="twitter-tweet">
+                <p lang="en" dir="ltr">Mischief soon hits the Rift <a href="https://t.co/c5ZS2f72KS">pic.twitter.com/c5ZS2f72KS</a></p>&mdash; League of Legends (@LeagueOfLegends) <a href="https://twitter.com/LeagueOfLegends/status/931618908980703232?ref_src=twsrc%5Etfw">November 17, 2017</a></blockquote>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
     </div>
 
@@ -237,6 +245,7 @@
                 modal.style.display = "none";
             }
         }
+
     </script>
 
 </body>

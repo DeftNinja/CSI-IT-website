@@ -1,0 +1,27 @@
+input[type="email"],
+input[type="password"],
+input[type="text"],
+input[type="number"],
+input[type="submit"],
+textarea,
+button {
+    padding: 0.3em;
+    border-radius: 0.5em;
+    width: 20em;
+    margin: 0.2em 0em;
+    display: block;
+    color: black;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    border-bottom: 5px dashed;
+}
+
+body {
+    background-color: #675F9D;
+    color: #F6F6F4;
+}
