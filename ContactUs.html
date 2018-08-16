@@ -18,8 +18,8 @@
 </head>
 
 
-<body>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #191919;color: #8e8e8e">
+<body style="background-color: #733A92">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #AD8BBF;color: #8e8e8e">
         <a class="navbar-brand" href="#">CSI-IT</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -28,45 +28,59 @@
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link" href="index.html">HOME</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Events</a>
+                    <a class="nav-link" href="#">EVENTS</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Sponsors</a>
+                    <a class="nav-link" href="#">SPONSORS</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="ContactUs.html">Contact us</a>
+                    <a class="nav-link" href="ContactUs.html">CONTACT US</a>
                 </li>
             </ul>
         </div>
     </nav>
     <div class="container">
         <header>
-            <h1>CONTACT US</h1>
-
-            <h2>We'd &#x2764 to help!</h2>
+            <h1>CONTACT</h1>
+            <h2>We'd &#128150; to help!</h2>
         </header>
-        <div class="row">
-            <div class="col-sm-6">
+        <div class="row" style="padding: 5%">
+            <div class="col-sm-5">
                 <form>
-                    <input type="text" placeholder="Your Name">
-                    <input type="email" placeholder="Your Email Address">
-                    <textarea style="resize: none"></textarea>
-                    <button type="submit">Send</button>
+                    <div class="row">
+                        <div class="col-75">
+                            <input type="text" id="fname" name="firstname" placeholder="Your Name">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-75">
+                            <input type="text" id="lname" name="lastname" placeholder="Your Email ID">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-75">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-75">
+                            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <input type="submit" value="Submit">
+                    </div>
                 </form>
             </div>
-
-            <div id="locate" class="col-sm-6">
-                <div id="address ">
-                    <p><span class="glyphicon glyphicon-map-marker ">FCRIT, VASHI, NAVI MUMBAI</p>
-            </div>
-            <div id="contact-number ">
-                <p><span class="glyphicon glyphicon-earphone "></span>+81 920382933</p>
-                </div>
-                <div id="email ">
-                    <p><span class="glyphicon glyphicon-send "></span>dontemailme@fckoff.com</p>
+            <div class="col-sm-2"></div>
+            <div class="col-sm-5">
+                <div class="locate" style="padding: 5em 3em ;line-height: 3em">
+                    <!--iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15082.928416318358!2d72.9917043!3d19.0755127!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbbf4481d662ca2d8!2sFr.+C.+Rodrigues+Institute+of+Technology!5e0!3m2!1sen!2sin!4v1534411696865" width="400" height="300" frameborder="0" style="border:0" allowfullscreen class="col-sm-12"></iframe-->
+                    <p><span class="glyphicon glyphicon-map-marker"></span> FCRIT, Vashi, Navi Mumbai</p>
+                    <p><span class="glyphicon glyphicon-earphone"></span> +91 9873527393</p>
+                    <p><span class="glyphicon glyphicon-send"></span> dontemailme@emailme.com</p>
                 </div>
             </div>
         </div>
