@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>Registration</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Custom styles for this template -->
+    <link href="css/forms.css" type="text/css" rel="stylesheet">
+    <style>
+        label {
+            display: block;
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">CSI-IT</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sponsors</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <header>
+            <h1>REGISTRATION</h1>
+            <h2>Registrations open for CSI-IT Events</h2>
+        </header>
+        <div class="row">
+            <div class="col-sm-12">
+                <form action="" method="get" id="form1">
+                    <div class="row">
+                        <div class="col-25">
+                            <label>First name</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="fname" name="firstname" placeholder="Enter Your First Name">
+                        </div>
+                    </div>
+                    <input type="text" name="lastname" placeholder="enter last name">
+                    <input type="number" name="rollno" placeholder="enter roll number" pattern="\d{3}[\-]\d{3}[\-]\d{4}" required>
+                    <input list="eventregister">
+                    <datalist id="eventregister">
+    <option value="abc">
+    <option value="ddd">
+    <option value="dde">
+    <option value="rrr">
+    <option value="t">
+  </datalist><input list="years">
+                    <datalist id="years">
+    <option value="2019">
+    <option value="2018">
+    <option value="2017">
+    <option value="2016">
+
+  </datalist>
+
+                    <label>
+        <input type="checkbox" checked="checked" name="remember" > Remember me
+      </label>
+                    <button type="submit" form=form1 value="Submit">Submit</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-dark fixed-bottom">
+        <div id="social-media">
+            <i class="fa fa-facebook-square" style="font-size:36px;color: white"><a href="#"></a></i>
+            <i class="fa fa-twitter-square" style="font-size:36px;color:white"><a href="#"></a></i>
+            <i class="fa fa-google-plus-square" style="font-size:36px;color: white"><a href="#"></a></i>
+        </div>
+
+
+        <script>
+            function check() {
+
+                var pass1 = document.getElementById('mobile');
+
+
+                var message = document.getElementById('message');
+
+                var goodColor = "#0C6";
+                var badColor = "#FF9B37";
+
+                if (mobile.value.length != 10) {
+
+                    mobile.style.backgroundColor = badColor;
+                    message.style.color = badColor;
+                    message.innerHTML = "required 10 digits, match requested format!"
+                }
+            }
+
+        </script>
+    </footer>
+</body>
+
+
+</html>

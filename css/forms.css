@@ -12,12 +12,15 @@ h3 {
 /* Style inputs, select elements and textareas */
 
 input[type=text],
+input[type=number],
+input[type="email"],
 select,
 textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     resize: none;
 }
