@@ -10,17 +10,15 @@
 
     <title>ContactUs</title>
 
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- CSS TEMPLATES -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="css/flashcard.css" type="text/css">
     <link href="css/forms.css" type="text/css" rel="stylesheet">
 </head>
 
 
 <body style="background-color: #733A92">
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #AD8BBF;color: #8e8e8e">
+    <!--nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #AD8BBF;color: #8e8e8e">
         <a class="navbar-brand" href="#">CSI-IT</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -42,13 +40,23 @@
                 </li>
             </ul>
         </div>
-    </nav>
+    </nav-->
+    <div class="topnav" id="myTopnav">
+        <a class="#">CSI-IT</a>
+        <a href="#home" class="active">HOME</a>
+        <a href="#">EVENTS</a>
+        <a href="#">SPONSORS</a>
+        <a href="#">CONTACT</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+    </div>
     <div class="container">
         <header>
             <h1>CONTACT</h1>
             <h2>We'd &#128150; to help!</h2>
         </header>
-        <div class="row" style="padding: 5%; margin: 0%; width: 100%">
+        <div class="row" id="main">
             <div class="col-sm-8">
                 <form>
                     <div class="row">
@@ -91,15 +99,17 @@
         </div>
     </div>
     <!-- /.container -->
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js " integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ " crossorigin="anonymous "></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js " integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm " crossorigin="anonymous "></script>
-
-
+    <!--SCRPITS-->
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
 </body>
 
 </html>

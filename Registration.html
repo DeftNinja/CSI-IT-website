@@ -16,12 +16,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Custom styles for this template -->
     <link href="css/forms.css" type="text/css" rel="stylesheet">
-    <style>
-        label {
-            display: block;
-        }
-
-    </style>
 </head>
 
 <body>
@@ -53,73 +47,109 @@
             <h1>REGISTRATION</h1>
             <h2>Registrations open for CSI-IT Events</h2>
         </header>
-        <div class="row">
-            <div class="col-sm-12">
+        <div class="row" id="main">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6">
                 <form action="" method="get" id="form1">
                     <div class="row">
                         <div class="col-25">
-                            <label>First name</label>
+                            <label>Name</label>
                         </div>
                         <div class="col-75">
-                            <input type="text" id="fname" name="firstname" placeholder="Enter Your First Name">
+                            <input type="text" id=name name="name" placeholder="Enter Your Name">
                         </div>
                     </div>
-                    <input type="text" name="lastname" placeholder="enter last name">
-                    <input type="number" name="rollno" placeholder="enter roll number" pattern="\d{3}[\-]\d{3}[\-]\d{4}" required>
-                    <input list="eventregister">
-                    <datalist id="eventregister">
-    <option value="abc">
-    <option value="ddd">
-    <option value="dde">
-    <option value="rrr">
-    <option value="t">
-  </datalist><input list="years">
-                    <datalist id="years">
-    <option value="2019">
-    <option value="2018">
-    <option value="2017">
-    <option value="2016">
-
-  </datalist>
-
-                    <label>
-        <input type="checkbox" checked="checked" name="remember" > Remember me
-      </label>
-                    <button type="submit" form=form1 value="Submit">Submit</button>
-
+                    <div class="row">
+                        <div class="col-25">
+                            <label>Email ID</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="email" name="email" placeholder="Enter Email ID">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label>Roll number</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="number" name="rollno" placeholder="Enter Your Roll Number" pattern="\d{3}[\-]\d{3}[\-]\d{4}" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label>Year</label>
+                        </div>
+                        <div class="col-75">
+                            <select required>
+                                <option disabled selected value> -- select an option -- </option>
+                                <option>First Year</option>
+                                <option>Second Year</option>
+                                <option>Third Year</option>
+                                <option>Fourth Year</option>
+                              </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label>Competitions</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="checkbox" name="quiz" value="quiz">Quiz<br>
+                            <input type="checkbox" name="blind_c" value="blind_c">Blind C<br>
+                            <input type="checkbox" name="debug_code" value="debug_code">Debug Code<br><br>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label>Workshops</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="checkbox" name="quiz" value="photoshop">Photoshop<br>
+                            <input type="checkbox" name="blind_c" value="php">PHP<br>
+                            <input type="checkbox" name="debug_code" value="unity">Unity<br>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3"></div>
+                        <div class="col-sm-6">
+                            <label><input type="checkbox" name="remember" >Remember me</label>
+                            <input type="submit" value="Submit">
+                        </div>
+                        <div class="col-sm-3"></div>
+                    </div>
                 </form>
             </div>
         </div>
+        <div class="col-sm-3"></div>
     </div>
-    <footer class="bg-dark fixed-bottom">
-        <div id="social-media">
-            <i class="fa fa-facebook-square" style="font-size:36px;color: white"><a href="#"></a></i>
-            <i class="fa fa-twitter-square" style="font-size:36px;color:white"><a href="#"></a></i>
-            <i class="fa fa-google-plus-square" style="font-size:36px;color: white"><a href="#"></a></i>
-        </div>
+    <!--footer class="bg-dark fixed-bottom">
+            <div id="social-media">
+                <i class="fa fa-facebook-square" style="font-size:36px;color: white"><a href="#"></a></i>
+                <i class="fa fa-twitter-square" style="font-size:36px;color:white"><a href="#"></a></i>
+                <i class="fa fa-google-plus-square" style="font-size:36px;color: white"><a href="#"></a></i>
+            </div>
+
+        </footer-->
+    <script>
+        function check() {
+
+            var pass1 = document.getElementById('mobile');
 
 
-        <script>
-            function check() {
+            var message = document.getElementById('message');
 
-                var pass1 = document.getElementById('mobile');
+            var goodColor = "#0C6";
+            var badColor = "#FF9B37";
 
+            if (mobile.value.length != 10) {
 
-                var message = document.getElementById('message');
-
-                var goodColor = "#0C6";
-                var badColor = "#FF9B37";
-
-                if (mobile.value.length != 10) {
-
-                    mobile.style.backgroundColor = badColor;
-                    message.style.color = badColor;
-                    message.innerHTML = "required 10 digits, match requested format!"
-                }
+                mobile.style.backgroundColor = badColor;
+                message.style.color = badColor;
+                message.innerHTML = "required 10 digits, match requested format!"
             }
+        }
+    </script>
 
-        </script>
-    </footer>
 </body>
 
 
