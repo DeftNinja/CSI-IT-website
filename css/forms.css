@@ -63,6 +63,9 @@ body {
         display: block;
         text-align: left;
     }
+    .w3-third {
+        margin: 0.5em;
+    }
 }
 
 /********************END OF MENUBAR CSS**************************/
@@ -76,7 +79,9 @@ body {
         float: right;
         width: 50%;
     }
-
+    .w3-third p {
+        padding: 20em 0em;
+    }
 }
 
 
