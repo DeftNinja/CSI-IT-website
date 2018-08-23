@@ -64,7 +64,12 @@ body {
         text-align: left;
     }
     .w3-third {
-        margin: 0.5em;
+        margin-bottom: 0.5em;
+        margin-left: 0em;
+        margin-right: 0em;
+    }
+    .w3-third p{
+        padding: 4em 0em;
     }
 }
 
@@ -80,7 +85,7 @@ body {
         width: 50%;
     }
     .w3-third p {
-        padding: 20em 0em;
+        padding: 13em 0em;
     }
 }
 
@@ -104,3 +109,59 @@ input[type="submit"] {
     margin-top: 2.5em;
     margin-left: 5em;
 }
+
+
+/**********SOCIAL MEDIA GLYPHS*********/
+
+        .fa {
+            padding: 0.2em;
+            font-size: 30px;
+            width: 2em;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 1px;
+        }
+
+        .fa:hover {
+            opacity: 0.7;
+            text-decoration: none;
+        }
+
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+        }
+
+        .fa-twitter {
+            background: #55ACEE;
+            color: white;
+        }
+
+        .fa-instagram {
+            background: #FF0090;
+            color: white;
+        }
+
+/**********END OF SOCIAL MEDIA GLYPHS*********/
+
+/***********FOOTER******************************/
+footer{
+    text-align: center;
+    background-color: darkslategray;
+    color: aliceblue;
+    position: relative;
+    bottom: -10px;
+    left: 0px;
+    width: 100%;
+}
+/***********END OF FOOTER**********************/
+
+/*CLEARFIX CODE FOR FLOAT MANAGEMENT*/
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+/******END OF CLEARFIX*******/
