@@ -1,11 +1,13 @@
 header {
     margin: 3% 5%;
+    color: #211523;
 }
 
 h1 {
     border-bottom: 3px dashed black;
     text-align: center;
     padding-bottom: 1%;
+    font-family: comic sans ms;
 }
 
 h2,
@@ -18,13 +20,13 @@ h3 {
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #72B6D0;
+    background-color: #D6C099;
     color: #F6F0F3;
 }
 
 .topnav {
     overflow: hidden;
-    background-color: #7ABD5F;
+    background-color: #211523;
 }
 
 .topnav a {
@@ -38,7 +40,7 @@ body {
 }
 
 .active {
-    background-color: #72B6D0;
+    background-color: #D6C099;
     color: #FDFBFA;
 }
 
@@ -78,6 +80,9 @@ body {
     .w3-third p {
         padding: 4em 0em;
     }
+    .address {
+        margin-top: 5%;
+    }
 }
 
 /********************END OF MENUBAR CSS**************************/
@@ -85,11 +90,17 @@ body {
 @media screen and (min-width:600px) {
     .details {
         float: left;
-        width: 50%;
+        width: 45%;
+        margin-left: 2%;
     }
     .address {
         float: right;
-        width: 50%;
+        width: 45%;
+        margin-right: 2%;
+    }
+    .address,
+    .details {
+        margin-bottom: 3%;
     }
     .w3-third p {
         padding: 13em 0em;
@@ -105,8 +116,9 @@ body {
 input[type="text"]:focus,
 input[type="email"]:focus,
 textarea:focus {
-    border-bottom: 2px solid blue;
+    border-bottom: 2px solid #D53F33;
 }
+
 
 input[type="submit"] {
     padding: 0.5em;
@@ -158,7 +170,7 @@ input[type="submit"] {
 
 footer {
     text-align: center;
-    background-color: darkslategray;
+    background-color: #D53F33;
     color: aliceblue;
     position: relative;
     bottom: -10px;
@@ -177,3 +189,10 @@ footer {
 }
 
 /******END OF CLEARFIX*******/
+
+.address,
+.details {
+    border-radius: 3em;
+    padding: 3em;
+    height: 34em;
+}
