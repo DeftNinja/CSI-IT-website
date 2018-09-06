@@ -83,6 +83,24 @@ body {
     .address {
         margin-top: 5%;
     }
+    .follow-twitter {
+        margin-top: 5%;
+    }
+
+    input[type="email"],
+    input[type="password"] {
+        display: block;
+        padding: 1%;
+        margin: 2% 0%;
+        color: black;
+        width: 80%;
+    }
+    #login {
+        width: 100%;
+    }
+    .image-container {
+        height: 20em;
+    }
 }
 
 /********************END OF MENUBAR CSS**************************/
@@ -102,11 +120,38 @@ body {
     .details {
         margin-bottom: 3%;
     }
+    .twitter {
+        float: left;
+        width: 45%;
+    }
+    .follow-twitter {
+        float: right;
+        width: 45%;
+        font-size: 24px;
+    }
+    .follow-twitter,
+    .twitter {
+        margin: 3% 2%;
+    }
     .w3-third p {
         padding: 13em 0em;
     }
     .w3-third p {
         height: 30em;
+    }
+    #login {
+        width: 50%;
+    }
+    input[type="email"],
+    input[type="password"] {
+        display: block;
+        padding: 1%;
+        margin: 2% 0%;
+        color: black;
+        width: 30em;
+    }
+    .image-container {
+        height: 40em;
     }
 }
 
@@ -115,6 +160,7 @@ body {
 
 input[type="text"]:focus,
 input[type="email"]:focus,
+input[type="password"]:focus,
 textarea:focus {
     border-bottom: 2px solid #D53F33;
 }

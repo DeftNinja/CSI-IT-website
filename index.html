@@ -20,33 +20,25 @@
             padding: 1% 0%
         }
 
-        input[type="email"],
-        input[type="password"] {
-            display: block;
-            padding: 1%;
-            margin: 2% 0%;
-            color: black;
-            width: 30em;
-        }
-
         input[type="submit"] {
             display: block;
         }
+
     </style>
 </head>
 
 <body style="background-color:#60C7EF">
     <nav class="topnav" id="myTopnav">
         <a class="#">CSI-IT</a>
-        <a href="index.html">HOME</a>
-        <a href="Events.html" class="active">EVENTS</a>
+        <a href="index.html" class="active">HOME</a>
+        <a href="Events.html">EVENTS</a>
         <a href="students.html">STUDENTS</a>
         <a href="sponsors.html">SPONSORS</a>
         <a href="ContactUs.html">CONTACT US</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
     </nav>
-    <div class="image-container" style="background-image:url(images/background.jpg); background-size: 100% 100%; width: 100%; height: 40em">
-        <form style="background-image: url(images/black.png); width: 50%; padding: 2%">
+    <div class="image-container" style="background-image:url(images/background.jpg); background-size: 100% 100%; width: 100%">
+        <form id="login" style="background-image: url(images/black.png); padding: 2%; position: relative;top:15%;">
             <label>Username</label>
             <input type="email" placeholder="Enter Email id...">
             <label>Password</label>
@@ -54,6 +46,17 @@
             <input type="submit" value="Submit" style="color: black">
             <a href="SignUp.html">Create an account?</a>
         </form>
+    </div>
+    <div class="clearfix">
+        <div class="twitter">
+            <a class="twitter-timeline" data-height="300" data-link-color="#2B7BB9" href="https://twitter.com/TwitterDev?ref_src=twsrc%5Etfw">Tweets by TwitterDev</a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div class="follow-twitter">
+            Follow us on twitter to stay updated about recent news and updates!<br>
+            <a class="twitter-follow-button" data-size="large" href="https://twitter.com/TwitterDev" style="margin-top: 3%">
+Follow @TwitterDev</a>
+        </div>
     </div>
     <footer>
         <small>Follow us at!</small>
@@ -74,6 +77,7 @@
                 x.className = "topnav";
             }
         }
+
     </script>
 </body>
 
