@@ -183,7 +183,7 @@ footer {
 /*CLEARFIX CODE FOR FLOAT MANAGEMENT*/
 
 .clearfix::after {
-    content: "";
+    . content: "";
     clear: both;
     display: table;
 }

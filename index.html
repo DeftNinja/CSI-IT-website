@@ -14,6 +14,25 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="css/forms.css" type="text/css" rel="stylesheet">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        label {
+            display: block;
+            padding: 1% 0%
+        }
+
+        input[type="email"],
+        input[type="password"] {
+            display: block;
+            padding: 1%;
+            margin: 2% 0%;
+            color: black;
+            width: 30em;
+        }
+
+        input[type="submit"] {
+            display: block;
+        }
+    </style>
 </head>
 
 <body style="background-color:#60C7EF">
@@ -26,8 +45,15 @@
         <a href="ContactUs.html">CONTACT US</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
     </nav>
-    <div class="">
-
+    <div class="image-container" style="background-image:url(images/background.jpg); background-size: 100% 100%; width: 100%; height: 40em">
+        <form style="background-image: url(images/black.png); width: 50%; padding: 2%">
+            <label>Username</label>
+            <input type="email" placeholder="Enter Email id...">
+            <label>Password</label>
+            <input type="password" placeholder="Enter Password...">
+            <input type="submit" value="Submit" style="color: black">
+            <a href="SignUp.html">Create an account?</a>
+        </form>
     </div>
     <footer>
         <small>Follow us at!</small>
@@ -48,7 +74,6 @@
                 x.className = "topnav";
             }
         }
-
     </script>
 </body>
 
