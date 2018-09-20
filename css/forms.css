@@ -88,7 +88,9 @@ body {
     }
 
     input[type="email"],
-    input[type="password"] {
+    input[type="password"],
+    input[type="text"],
+    input[type="number"] {
         display: block;
         padding: 1%;
         margin: 2% 0%;
@@ -143,7 +145,10 @@ body {
         width: 50%;
     }
     input[type="email"],
-    input[type="password"] {
+    input[type="password"],
+    input[type="text"],
+    input[type="number"],
+    select {
         display: block;
         padding: 1%;
         margin: 2% 0%;
@@ -216,7 +221,7 @@ input[type="submit"] {
 
 footer {
     text-align: center;
-    background-color: #D53F33;
+    background-color: #211523;
     color: aliceblue;
     position: relative;
     bottom: -10px;

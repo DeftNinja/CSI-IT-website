@@ -24,10 +24,61 @@
             display: block;
         }
 
+        /* The Modal (background) */
+
+        .modal {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Sit on top */
+            padding-top: 100px;
+            /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Black w/ opacity */
+        }
+
+        /* Modal Content */
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+        }
+
+        /* The Close Button */
+
+        .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
     </style>
 </head>
 
-<body style="background-color:#60C7EF">
+<body>
     <nav class="topnav" id="myTopnav">
         <a class="#">CSI-IT</a>
         <a href="index.html" class="active">HOME</a>
@@ -44,10 +95,42 @@
             <label>Password</label>
             <input type="password" placeholder="Enter Password...">
             <input type="submit" value="Submit" style="color: black">
-            <a href="SignUp.html">Create an account?</a>
+            <a id="myBtn">Create an account?</a>
+            <!-- The Modal -->
+            <div id="myModal" class="modal" style="color:black">
+
+                <!-- Modal content -->
+                <div class="modal-content" style="padding: 5em 15em">
+                    <span class="close">&times;</span>
+                    <h3>SIGN UP</h3>
+                    <form>
+                        </br>
+                        <label>Name</label>
+                        <input type="text" placeholder="Enter your name...">
+                        <label>Roll no</label>
+                        <input type="number" placeholder="Enter your roll number...">
+                        <label>Year</label>
+                        <select>
+                            <option>F.E.</option>
+                            <option>S.E.</option>
+                            <option>T.E</option>
+                            <option>B.E.</option>
+                        </select>
+                        <label>Email</label>
+                        <input type="email" placeholder="Enter your email id...">
+                        <label>Password</label>
+                        <input type="password">
+                        <label>Retype password</label>
+                        <input type="password">
+                        <input type="submit" value="Sign up">
+                    </form>
+                </div>
+
+            </div>
+
         </form>
     </div>
-    <div class="clearfix">
+    <div class="clearfix" style="background-color: white;color: #613B70">
         <div class="twitter">
             <h2 style="font-weight: 500; text-align: center; line-height: 5em">About CSI</h2>
         </div>
@@ -55,11 +138,17 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, sit, et. Repellat repudiandae aperiam illum, dolorum velit distinctio fuga ipsam nemo necessitatibus sunt sit voluptas cupiditate tenetur beatae corrupti quo.</p>
         </div>
     </div>
-    <div class="countdown-timer" style="text-align: center; font-size: 36px">
+    <div class="countdown-timer" style="text-align: center; font-size: 36px; background-color: #B8A2DA;margin-bottom: 0px;padding: 2em 0em">
         <p id="countdown"></p>
-        <p>Countdown until next event...</p>
+        <p><a href="#">Countdown until next event...</a></p>
     </div>
-    <div class="clearfix">
+    <div class="sponsors" style="height: auto;padding: 0% 5%; background-color: white; margin-top: 0px">
+        <h3 style="text-align: center; padding: 2% 0%">Our Sponsors</h3>
+        <a href="https://www.endeavorcareers.com/"><img class="sponsor" src="images/Endeavor.jpg" alt="endeavor" width="400em"></a>
+        <a href="http://vidyalankar.org/"><img class="sponsor" src="images/logo-1.png" alt="vidyalankar" width="400em"></a>
+        <a href="https://www.time4education.com/"><img class="sponsor" src="images/Time-Logo.jpg" alt="time" width="400em"></a>
+    </div>
+    <div class="clearfix" style="background-color: #B8A2DA;margin-top: 0px;margin-bottom: 0px">
         <div class="twitter">
             <a class="twitter-timeline" data-height="300" data-link-color="#2B7BB9" href="https://twitter.com/TwitterDev?ref_src=twsrc%5Etfw">Tweets by TwitterDev</a>
             <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -70,13 +159,7 @@
 Follow @TwitterDev</a>
         </div>
     </div>
-    <div class="sponsors" style="height: auto;padding: 0% 5%; background-color: fuchsia">
-        <h3 style="text-align: center; padding: 2% 0%">Our Sponsors</h3>
-        <a href="https://www.endeavorcareers.com/"><img class="sponsor" src="images/Endeavor.jpg" alt="endeavor" width="400em"></a>
-        <a href="http://vidyalankar.org/"><img class="sponsor" src="images/logo-1.png" alt="vidyalankar" width="400em"></a>
-        <a href="https://www.time4education.com/"><img class="sponsor" src="images/Time-Logo.jpg" alt="time" width="400em"></a>
-    </div>
-    <footer>
+    <footer style="margin-top: 0px">
         <small>Follow us at!</small>
         <div class="social-networks" style="text-align: center">
             <a href="#" class="fa fa-facebook"></a>
@@ -124,6 +207,32 @@ Follow @TwitterDev</a>
                 x.className += " responsive";
             } else {
                 x.className = "topnav";
+            }
+        }
+
+        // Get the modal
+        var modal = document.getElementById('myModal');
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
             }
         }
 
