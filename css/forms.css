@@ -245,5 +245,5 @@ footer {
 .details {
     border-radius: 3em;
     padding: 3em;
-    height: 34em;
+    height: auto;
 }
