@@ -103,6 +103,19 @@ body {
     .image-container {
         height: 20em;
     }
+    img.sponsor {
+        max-width: 20em;
+    }
+    .main {
+        max-width: 100%;
+    }
+    .about-info,
+    .sponsors {
+        text-align: center;
+    }
+    #tweet {
+        padding: 1em 0em;
+    }
 }
 
 /********************END OF MENUBAR CSS**************************/

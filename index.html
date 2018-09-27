@@ -101,7 +101,7 @@
 
                 <!-- Modal content -->
                 <div class="modal-content" style="padding: 5em 15em">
-                    <span class="close">&times;</span>
+                    <span class="close" style="color: red">&times;</span>
                     <h3>SIGN UP</h3>
                     <form>
                         </br>
@@ -130,33 +130,37 @@
 
         </form>
     </div>
-    <div class="clearfix" style="background-color: white;color: #613B70">
-        <div class="twitter">
-            <h2 style="font-weight: 500; text-align: center; line-height: 5em">About CSI</h2>
+    <div class="main">
+        <div class="clearfix" style="background-color: white;color: #613B70">
+            <div class="about">
+                <div class="twitter">
+                    <h2 class="about-head" style="font-weight: 500; text-align: center; line-height: 5em">About CSI</h2>
+                </div>
+                <div class="follow-twitter">
+                    <p class="about-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, sit, et. Repellat repudiandae aperiam illum, dolorum velit distinctio fuga ipsam nemo necessitatibus sunt sit voluptas cupiditate tenetur beatae corrupti quo.</p>
+                </div>
+            </div>
         </div>
-        <div class="follow-twitter">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, sit, et. Repellat repudiandae aperiam illum, dolorum velit distinctio fuga ipsam nemo necessitatibus sunt sit voluptas cupiditate tenetur beatae corrupti quo.</p>
+        <div class="countdown-timer" style="text-align: center; font-size: 36px; background-color: #B8A2DA;padding: 2em 0em">
+            <p id="countdown"></p>
+            <p><a href="#">Countdown until next event...</a></p>
         </div>
-    </div>
-    <div class="countdown-timer" style="text-align: center; font-size: 36px; background-color: #B8A2DA;margin-bottom: 0px;padding: 2em 0em">
-        <p id="countdown"></p>
-        <p><a href="#">Countdown until next event...</a></p>
-    </div>
-    <div class="sponsors" style="height: auto;padding: 0% 5%; background-color: white; margin-top: 0px">
-        <h3 style="text-align: center; padding: 2% 0%">Our Sponsors</h3>
-        <a href="https://www.endeavorcareers.com/"><img class="sponsor" src="images/Endeavor.jpg" alt="endeavor" width="400em"></a>
-        <a href="http://vidyalankar.org/"><img class="sponsor" src="images/logo-1.png" alt="vidyalankar" width="400em"></a>
-        <a href="https://www.time4education.com/"><img class="sponsor" src="images/Time-Logo.jpg" alt="time" width="400em"></a>
-    </div>
-    <div class="clearfix" style="background-color: #B8A2DA;margin-top: 0px;margin-bottom: 0px">
-        <div class="twitter">
-            <a class="twitter-timeline" data-height="300" data-link-color="#2B7BB9" href="https://twitter.com/TwitterDev?ref_src=twsrc%5Etfw">Tweets by TwitterDev</a>
-            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <div class="sponsors" style="height: auto;padding: 0% 5%; background-color: white; margin-top: 0px;color: #613B70">
+            <h3 style="text-align: center; padding: 2% 0%">Our Sponsors</h3>
+            <a href="https://www.endeavorcareers.com/"><img class="sponsor" src="images/Endeavor.jpg" alt="endeavor" width="400em"></a>
+            <a href="http://vidyalankar.org/"><img class="sponsor" src="images/logo-1.png" alt="vidyalankar" width="400em"></a>
+            <a href="https://www.time4education.com/"><img class="sponsor" src="images/Time-Logo.jpg" alt="time" width="400em"></a>
         </div>
-        <div class="follow-twitter">
-            Follow us on twitter to stay updated about recent news and updates!<br>
-            <a class="twitter-follow-button" data-size="large" href="https://twitter.com/TwitterDev" style="margin-top: 3%">
+        <div class="clearfix" style="background-color: #B8A2DA;margin-top: 0px;margin-bottom: 0px">
+            <div class="twitter">
+                <a class="twitter-timeline" data-height="300" data-link-color="#2B7BB9" href="https://twitter.com/TwitterDev?ref_src=twsrc%5Etfw">Tweets by TwitterDev</a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+            <div class="follow-twitter" id="tweet">
+                Follow us on twitter to stay updated about recent news and updates!<br>
+                <a class="twitter-follow-button" data-size="large" href="https://twitter.com/TwitterDev" style="margin-top: 3%">
 Follow @TwitterDev</a>
+            </div>
         </div>
     </div>
     <footer style="margin-top: 0px">
